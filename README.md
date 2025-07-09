@@ -1,11 +1,11 @@
 
-# 📚 Biblioteca Virtual
+# Biblioteca Virtual
 
 Proyecto final para la materia de Programación V – Universidad. Este proyecto implementa una plataforma en Django para registrar, listar y analizar libros, autores, calificaciones y reseñas, con autenticación por token y soporte de análisis de datos en Google Colab.
 
 ---
 
-## ✅ 1. Versiones de Herramientas
+## 1. Versiones de Herramientas
 
 - Python: 3.11+
 - Django: 5.2.4
@@ -20,7 +20,7 @@ Proyecto final para la materia de Programación V – Universidad. Este proyecto
 
 ---
 
-## ⚙️ 2. Instalaciones y Configuración
+## 2. Instalaciones y Configuración
 
 ### Crear entorno virtual:
 ```bash
@@ -58,7 +58,7 @@ DATABASES = {
 
 ---
 
-## 📖 3. Explicación del Programa
+## 3. Explicación del Programa
 
 Este sistema permite:
 - Registrar autores y libros con PDF y portada.
@@ -72,7 +72,7 @@ Incluye endpoints para autenticación, registro, análisis y sugerencias, ademá
 
 ---
 
-## ✍️ 4. Registro de Libros (código y prueba Postman)
+## 4. Registro de Libros (código y prueba Postman)
 
 ### Endpoint:
 `POST /api/libros/` *(requiere autenticación con token)*
@@ -95,7 +95,7 @@ El archivo PDF y la portada se deben cargar con `multipart/form-data` en Postman
 
 ---
 
-## 📚 5. Listado de Libros
+## 5. Listado de Libros
 
 ### Endpoint:
 `GET /api/libros/`
@@ -107,15 +107,15 @@ Opciones de filtro:
 
 ---
 
-## ⚙️ 6. Scripts incluidos
+## 6. Scripts incluidos
 
-### 📦 `make_proyecto.py`
+### `make_proyecto.py`
 Script que genera:
 - 30 autores con fotos ficticias
 - 120 libros con portadas y archivos PDF generados
 - Asociación de libros con autores y géneros
 
-### 🧠 `generar_resenas_y_calificaciones.py`
+### `generar_resenas_y_calificaciones.py`
 Genera automáticamente:
 - Usuarios ficticios
 - Calificaciones de 1 a 5 estrellas
@@ -123,9 +123,9 @@ Genera automáticamente:
 
 ---
 
-## 🧪 7. Análisis de Datos y Gráficos
+## 7. Análisis de Datos y Gráficos
 
-### 🔎 Script: `analisis.py`
+### Script: `analisis.py`
 Este script extrae datos de calificaciones y genera:
 - Archivo `calificaciones.csv`
 - Gráficos de barras (puntaje promedio por género)
@@ -134,7 +134,7 @@ Este script extrae datos de calificaciones y genera:
 ![grafico_distribucion_puntajes](https://github.com/user-attachments/assets/faabff6d-adb9-4f98-b13e-d7a292537cd8)
 
 
-### 🧮 Endpoint: `/api/analisis/`
+### Endpoint: `/api/analisis/`
 Devuelve JSON con:
 - Promedios por autor/género
 - Libros recomendados
@@ -144,13 +144,13 @@ Devuelve JSON con:
 
 ---
 
-## 🧠 8. Sugerencias por Género
+## 8. Sugerencias por Género
 
 Tanto el endpoint `/api/analisis/` como el script de análisis identifican automáticamente los libros mejor puntuados por género para sugerencias dinámicas o dashboards.
 
 ---
 
-## 📝 9. Licencia de Herramientas
+## 9. Licencia de Herramientas
 
 Este proyecto utiliza herramientas y librerías con licencias open source:
 
@@ -168,7 +168,7 @@ Este proyecto utiliza herramientas y librerías con licencias open source:
 
 ---
 
-## 🚀 Ejecutar en local
+## Ejecutar en local
 
 ```bash
 python manage.py runserver
