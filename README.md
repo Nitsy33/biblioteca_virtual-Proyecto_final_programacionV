@@ -1,5 +1,5 @@
 
-# Biblioteca Virtual
+# Biblioteca Virtual - Isaías Daniel Encina Cáceres 
 
 Proyecto final para la materia de Programación V – Universidad. Este proyecto implementa una plataforma en Django para registrar, listar y analizar libros, autores, calificaciones y reseñas, con autenticación por token y soporte de análisis de datos en Google Colab.
 
